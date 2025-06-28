@@ -1,0 +1,333 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+p {
+  color: #ace55c;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #83c12b;
+  position: sticky;
+  top: 0%;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 12px 24px;
+  display: flex;
+  box-shadow: 0 2px 4px rgba(133, 81, 81, 0.1);
+}
+
+
+body {
+  background-color: #070a3d;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card-title {
+  color: #410b6c;
+  /* ungu tekno */
+}
+
+h1,
+h2,
+h3 {
+  color: #ace55c;
+  /*ijo neoo*/
+}
+
+footer {
+  margin-top: 60px;
+}
+
+.bio-deskripsi {
+  max-width: 1200px;
+  /*lebar maksimal bio */
+  margin: 0 auto;
+  /*bikin posisi div ada di tengah */
+  padding: 0 20px;
+  /* Bikin jarak pas layar kecil */
+  font-size: 18px;
+  /*ukuran font */
+  text-align: center;
+  /* rata tengah */
+}
+
+.projek-wrapper {
+  max-width: 1200px;
+  /*lebar maksimal card */
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.judul-section,
+.judul-sub {
+  text-align: center;
+  color: #172d87;
+  /* ungu */
+  margin-bottom: 20px;
+}
+
+.projek-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.projek-card {
+  background-color: #172d87;
+  border: 1px solid #172d87;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-text {
+  color: #172d87;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.projek-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin-left: 0;
+  /* tepi kiri */
+  margin-right: 0;
+  /* tepi kanan */
+  padding: 0;
+  border-bottom: 5px solid #dbdd64;
+  /* garis misah gambar logo dan text */
+}
+
+.projek-content {
+  padding: 20px;
+}
+
+.projek-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0%;
+  color: #172d87;
+}
+
+.projek-text {
+  color: #172d87;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.kontak-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.kontak-section h2 {
+  text-align: center;
+}
+
+.kontak-button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.kontak-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid #ebe6e6;
+  color: #d3c2c2;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.kontak-btn:hover {
+  background-color: #252a80;
+  color: #fff;
+  cursor: pointer;
+}
+
+.custom-tagline {
+  background-color: #101246;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: bold;
+
+}
+
+/* footer Styles */
+.footerstyle {
+  background-color: #83c12b;
+  justify-content: center;
+  color: #172d87;
+  top: 0%;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(177, 138, 138, 0.1);
+  font-weight: bold;
+}
+
+/*contact us */
+.contact-section {
+  color: #83c12b;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #84f293;
+}
+
+.contact-section {
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: #83c12b;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #83c12b;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px;
+  border-radius: 6px;
+  background-color: #0e1b4e;
+  color: #e5f5e8;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #ffc400;
+  color: #0e1b4e;
+  border: none;
+  padding: 14px 30px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e5f5e8;
+  color: #070a3d;
+}
+
+
+/*collab us */
+.collab-section {
+  color: #83c12b;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.collab-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #84f293;
+}
+
+.collab-section {
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: #83c12b;
+}
+
+.collab-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.collab-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #83c12b;
+}
+
+.collab-form input,
+.collab-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px;
+  border-radius: 6px;
+  background-color: #0e1b4e;
+  color: #e5f5e8;
+  font-size: 16px;
+}
+
+.collab-form button {
+  background-color: #ffc400;
+  color: #0e1b4e;
+  border: none;
+  padding: 14px 30px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.collab-form button:hover {
+  background-color: #e5f5e8;
+  color: #070a3d;
+}
+
+#backToTopBtn {
+  display: none;
+  /* Awalnya tombol tidak terlihat */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: transparent;
+  /* transparan karena pakai gambar */
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
+}
+
+#backToTopBtn img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#backToTopBtn:hover img {
+  transform: scale(1.1);
+}
