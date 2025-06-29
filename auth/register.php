@@ -1,5 +1,5 @@
 <?php
-include 'db_config.php';
+include '../includes/db_config.php';
 
 $username = $_POST['username'];
 $email = $_POST['email'];
@@ -23,7 +23,5 @@ if ($result->num_rows > 0) {
         echo "<script>alert('Gagal daftar: " . $stmt->error . "'); window.location.href='loginnexora.html';</script>";
     }
 }
-    $stmt->close();
-    $conn->close();
-
-?>
+$stmt->close();
+$conn->close();
