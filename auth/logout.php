@@ -1,5 +1,5 @@
 <?php
-session_start();
+require '../includes/config.php';
 session_destroy();
-header("Location: ../login.html");
+header('Location: login.php');
 exit;

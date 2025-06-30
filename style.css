@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 p {
@@ -11,16 +11,16 @@ p {
   background-color: #83c12b;
   position: sticky;
   top: 0%;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   padding: 12px 24px;
   display: flex;
   box-shadow: 0 2px 4px rgba(133, 81, 81, 0.1);
+  z-index: 1000;
 }
-
 
 body {
   background-color: #070a3d;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .card-title {
@@ -163,7 +163,6 @@ footer {
   text-align: center;
   padding: 20px 0;
   font-weight: bold;
-
 }
 
 /* footer Styles */
@@ -172,7 +171,7 @@ footer {
   justify-content: center;
   color: #172d87;
   top: 0%;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   padding: 12px 24px;
   display: flex;
   align-items: center;
@@ -185,7 +184,7 @@ footer {
   color: #83c12b;
   padding: 60px 20px;
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .contact-section h2 {
@@ -204,7 +203,7 @@ footer {
   max-width: 600px;
   margin: 0 auto;
   text-align: left;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .contact-form label {
@@ -230,7 +229,7 @@ footer {
   color: #0e1b4e;
   border: none;
   padding: 14px 30px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
@@ -242,13 +241,12 @@ footer {
   color: #070a3d;
 }
 
-
 /*collab us */
 .collab-section {
   color: #83c12b;
   padding: 60px 20px;
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .collab-section h2 {
@@ -267,7 +265,7 @@ footer {
   max-width: 600px;
   margin: 0 auto;
   text-align: left;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .collab-form label {
@@ -293,7 +291,7 @@ footer {
   color: #0e1b4e;
   border: none;
   padding: 14px 30px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
