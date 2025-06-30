@@ -1,27 +1,30 @@
 <?php
-include '../includes/db_config.php';
+require '../includes/config.php';
 
-$username = $_POST['username'];
-$email = $_POST['email'];
-$raw_password = $_POST['password'];
-$password = password_hash($raw_password, PASSWORD_DEFAULT); // Enkripsi password
+$message = '';
 
-// Cek apakah username atau email sudah terdaftar
-$stmt = $conn->prepare("SELECT * FROM users WHERE email=? OR username=?");
-$stmt->bind_param("ss", $email, $username);
-$stmt->execute();
-$result = $stmt->get_result();
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = trim($_POST['username']);
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-if ($result->num_rows > 0) {
-    echo "<script>alert('Email atau username sudah terdaftar!'); window.location.href='loginnexora.html';</script>";
-} else {
-    $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
-    $stmt->bind_param("sss", $username, $email, $password);
-    if ($stmt->execute()) {
-        echo "<script>alert('Registrasi berhasil! Silakan login.'); window.location.href='loginnexora.html';</script>";
+    $stmt = $pdo->prepare("SELECT id FROM users WHERE username = ?");
+    $stmt->execute([$username]);
+
+    if ($stmt->rowCount() > 0) {
+        $message = "Username sudah terdaftar!";
     } else {
-        echo "<script>alert('Gagal daftar: " . $stmt->error . "'); window.location.href='loginnexora.html';</script>";
+        $stmt = $pdo->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
+        $stmt->execute([$username, $password]);
+        header('Location: login.php');
+        exit;
     }
 }
-$stmt->close();
-$conn->close();
+?>
+
+<h2>Register</h2>
+<form method="POST">
+    <input type="text" name="username" required placeholder="Username">
+    <input type="password" name="password" required placeholder="Password">
+    <button type="submit">Register</button>
+</form>
+<p><?= $message ?></p>

@@ -1,3 +1,7 @@
+<?php
+require 'includes/config.php';
+require 'includes/functions.php';
+?>
 <!DOCTYPE html>
 <html lang="id">
 
@@ -20,27 +24,35 @@
 
     <!-- Ini html buat bagian Bar Navigasi -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-">
-
-        <!--Buat isi navgar rata tengah dan otomatis seuaikan ukuran pas dibuka-->
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Nexora Official</a>
-            <!--Toogler buat tampilan mobile-->
+            <a class="navbar-brand fw-bold" href="/">Nexora Official</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="liberahosting.html">Libera Hosting</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="marketplace.html">Marketplace War</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="collab.html">Collaboration Arena</a></li>
-                    <li class="nav-item"><a class="nav-link" href="classskil.html">Skill Up Lab</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us?</a></li>
-                </ul>
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="liberahosting.php">Libera Hosting</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="marketplace.php">Marketplace War</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collab.php">Collaboration Arena</a></li>
+                    <li class="nav-item"><a class="nav-link" href="classkill.php">Skill Up Lab</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us?</a></li>
 
+                    <?php if (is_logged_in()): ?>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="#">Hi,
+                            <?= htmlspecialchars($_SESSION['username']) ?>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="/auth/logout.php">Logout</a>
+                    </li>
+                    <?php else: ?>
+                    <li class="nav-item"><a class="nav-link" href="/auth/login.php">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/auth/register.php">Register</a></li>
+                    <?php endif; ?>
+                </ul>
             </div>
         </div>
     </nav>
@@ -299,35 +311,19 @@
                     </div>
                 </div>
             </div>
-            <button onclick="scrollToTop()" id="backToTopBtn" title="Kembali ke Atas">
-                <img src="assets/upload.png" alt="arrow up">
-            </button>
-            <footer class="footerstyle">
-                &copy;2025 NEXORA. ALL RIGHTS RESERVED.
-                <br>TERMS OF USE | ADDITIONAL CONTENT INFORMATION | PRIVACY POLICE |
-                <br>US STATE PRIVACY RIGHTS | CHILDREN'S ONLINE PRIVACY | INTEREST-BASED ADS |
-                <br>DO NOT SELL OR SHARE MY PERSONAL INFORMATION
-            </footer>
-            <script src="script.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-            <script>
-                // bikin nontifikasi sebelum link terbuka
-                const smuaLink = document.querySelectorAll('a');
-
-                // Loop semua link
-                smuaLink.forEach(function (link) {
-                    link.addEventListener('click', function (event) {
-                        event.preventDefault(); // Cegah langsung pergi ke link
-
-                        // untuk munculin pesan alert, ketiknya disini
-                        alert("kamu akan mengarah ke halaman lain. klik OK jika setuju");
-
-                        // nanti kalo klik OK dari pesan pop up, baru bisa lanjut ke link otomatis
-                        window.open(this.href, '_blank');
-                    });
-                });
-            </script>
-
+        </div>
+    </div>
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Kembali ke Atas">
+        <img src="assets/upload.png" alt="arrow up">
+    </button>
+    <footer class="footerstyle">
+        &copy;2025 NEXORA. ALL RIGHTS RESERVED.
+        <br>TERMS OF USE | ADDITIONAL CONTENT INFORMATION | PRIVACY POLICE |
+        <br>US STATE PRIVACY RIGHTS | CHILDREN'S ONLINE PRIVACY | INTEREST-BASED ADS |
+        <br>DO NOT SELL OR SHARE MY PERSONAL INFORMATION
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
