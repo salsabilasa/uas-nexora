@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Nexora</title>
+  <link rel="shorcut icon" href="logo nexora FINAL-24.jpg" type="image/x-icon", border-radius="50%">
+
+
+  <!--Buat responsif di perangkat mobile jadi pakai viewpor, Nambah Bootstrap CSS
+  
+  CDN(Content Delivery Network), nyimpan file pustaka open source biar gausah unduh-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+  <!--buat lanjut custom CSS di tab sebelah-->
+  <link href="stylenexora.css" rel="stylesheet">
+  <link href="stylelogin.css" rel="stylesheet">
+</head>
+<body>
+
+
+  <!-- Ini html buat bagian Bar Navigasi -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-">
+
+
+    <!--Buat isi navgar rata tengah dan otomatis seuaikan ukuran pas dibuka-->
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Nexora Official</a>
+        <!--Toogler buat tampilan mobile-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="loginnexora.html">Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="liberahosting.html">Libera Hosting</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="marketplace.html">Marketplace War</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="collab.html">Collaboration Arena</a></li>
+            <li class="nav-item"><a class="nav-link" href="classskil.html">Skill Up Lab</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us?</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+
+
+  <!-- mini copyright -->
+    <div class="container text-center py-3">
+    <img src="navbar mini nexora.png" alt="Foto Profil" class="img-fluid" style="max-width: 100%; height: auto;">
+    </div>
+
+
+  <!-- LOGIN CONTAINER -->
+    <div class="d-flex justify-content-center align-items-center py-1" style="min-height: 100vh;">
+      <div class="container px-4" id="container">
+
+
+      <!-- REGISTER -->
+      <div class="form-container register-container">
+        <form action="register_process.php" method="POST">
+          
+          <div class="social-container">
+            <a href="#"><i class="lni lni-facebook-fill"></i></a>
+            <a href="#"><i class="lni lni-google"></i></a>
+            <a href="#"><i class="lni lni-linkedin-original"></i></a>
+          </div>
+        </form>
+      </div>
+
+
+      <!-- LOGIN -->
+      <div class="form-container login-container">
+        <form action="submit_contact.php" method="POST">
+          <br>
+          <h1>Kontak kami</h1>
+          <input type="text" name="nama" placeholder="Nama Lengkap" required>
+          
+          <input type="text" name="email" placeholder="Email" required>
+          
+          <input type="text" name="subjek" placeholder="Subjek" required>
+          
+          <textarea name="Pesan" placeholder="Pesan" required rows="5" style="resize: none;"></textarea>
+
+
+          <button type="submit" name=>Kirim Pesan Sekarang</button>
+
+
+          <h10>atau klik media sosial dibawah ini</h10>
+          <div class="social-container">
+            <a href="#"><i class="lni lni-facebook-fill"></i></a>
+            <a href="#"><i class="lni lni-google"></i></a>
+            <a href="#"><i class="lni lni-linkedin-original"></i></a>
+            <br>
+          </div>
+        </form>
+      </div>
+
+
+      <!-- OVERLAY -->
+      <div class="overlay-container d-none d-md-block">
+        <div class="overlay" style="background-image: url('lebah-panel.gif');">
+          
+          
+          <div class="overlay-panel overlay-right">
+            <h1 class="title">Your Word,<br>Our Action.</h1>
+            <br>
+            <p>Punya pertanyaan, keluhan, atau cuma pengin say hi ke kru Nexora? Ini tempatnya! Kami bukan tipe yang ninggalin chat centang satu. Tulis apa pun yang kamu butuh—tentang layanan, ide saran, bahkan kalau kamu mau ngasih joke receh pun, boleh banget. Karena semua pesan itu penting. Bahkan yang isinya cuma: “Nexora keren banget!” (Kami juga suka baca yang kayak gitu.)</p>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Code JS bootstrap buat fitur aktif yang sebelumya (carousel, navbar toogle dll) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script>
+    // bikin nontifikasi sebelum link terbuka
+    const smuaLink = document.querySelectorAll('a');
+  
+    // Loop semua link
+    smuaLink.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); // Cegah langsung pergi ke link
+  
+        // untuk munculin pesan alert, ketiknya disini
+        alert("kamu akan mengarah ke halaman lain. klik OK jika setuju");
+  
+        // nanti kalo klik OK dari pesan pop up, baru bisa lanjut ke link otomatis
+        window.open(this.href, '_blank');
+      });
+    });
+  </script>
+  </div>
+  </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="footerstyle">
+    &copy;2025 NEXORA. ALL RIGHTS RESERVED.
+  </footer>
+
+
+</body>
+</html>
