@@ -4,7 +4,7 @@ require '../includes/config.php';
 $message = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") 
-    $username = trim($_POST['username'])
+    $username = trim($_POST['username']);
 require '../includes/config.php';
 
 $message = '';

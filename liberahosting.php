@@ -98,7 +98,7 @@ require 'includes/functions.php';
 
          <div class="row g-4">
             <!-- CARD 1 -->
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4 hover-scale">
                <div class="card h-100 shadow">
 
                   <img src="assets/Minecraft Thumbnail.jpg" class="card-img-top" alt="CUSTOM SKIN MENECRAFT">
@@ -111,7 +111,7 @@ require 'includes/functions.php';
             </div>
 
             <!-- CARD 2 -->
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4 hover-scale">
                <div class="card h-100 shadow">
 
                   <img src="assets/Minecraft Thumbnail.jpg" class="card-img-top" alt="Minecraft Java & Bedrock">
@@ -124,7 +124,7 @@ require 'includes/functions.php';
             </div>
 
             <!-- CARD 3 -->
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4 hover-scale">
                <div class="card h-100 shadow">
 
                   <img src="assets/war minecraft.jpg" class="card-img-top" alt="Crack Installer Minecraft">
@@ -138,7 +138,7 @@ require 'includes/functions.php';
             </div>
 
             <!-- CARD 4 -->
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4 hover-scale">
                <div class="card h-100 shadow">
 
                   <img src="assets/Minecraft Thumbnail.jpg" class="card-img-top" alt="test">
@@ -151,7 +151,7 @@ require 'includes/functions.php';
             </div>
 
             <!-- CARD 5 -->
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4 hover-scale">
                <div class="card h-100 shadow">
 
                   <img src="assets/war minecraft.jpg" class="card-img-top" alt="">
@@ -164,7 +164,7 @@ require 'includes/functions.php';
             </div>
 
             <!-- CARD 6 -->
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4 hover-scale">
                <div class="card h-100 shadow">
 
                   <img src="assets/Minecraft Thumbnail.jpg" class="card-img-top" alt="">

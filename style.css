@@ -329,3 +329,12 @@ footer {
 #backToTopBtn:hover img {
   transform: scale(1.1);
 }
+
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
