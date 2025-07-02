@@ -204,7 +204,7 @@ require 'includes/functions.php';
       <!--Di ukuran layar kecil (sm).
       Di layar besar (lg).-->
       <!-- CARD 1 -->
-      <div class="col-sm-6 col-lg-4">
+      <div class="col-sm-6 col-lg-4 hover-scale">
         <div class="card h-100 shadow">
           <img src="assets/minecraft sigma.jpeg" class="card-img-top" alt="CUSTOM SKIN MINECRAFT">
           <div class="card-body text-start">
@@ -220,7 +220,7 @@ require 'includes/functions.php';
       </div>
 
       <!-- CARD 2 -->
-      <div class="col-sm-6 col-lg-4">
+      <div class="col-sm-6 col-lg-4 hover-scale">
         <div class="card h-100 shadow">
           <img src="assets/war minecraft.jpg" class="card-img-top" alt="Hosting Server Minecraft">
           <div class="card-body text-start">
@@ -234,7 +234,7 @@ require 'includes/functions.php';
         </div>
       </div>
       <!-- CARD 3 -->
-      <div class="col-sm- col-lg-4">
+      <div class="col-sm- col-lg-4 hover-scale">
         <div class="card h-100 shadow">
           <img src="assets/Minecraft Thumbnail.jpg" class="card-img-top" alt="Minecraft Java & Bedrock">
           <div class="card-body text-start">

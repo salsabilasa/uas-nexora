@@ -111,7 +111,7 @@ require 'includes/functions.php';
 
             <div class="row g-4">
                 <!-- CARD 1 -->
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 hover-scale">
                     <div class="card h-100 shadow">
 
                         <img src="assets/minecraft tumbler.jpg" card-img-top" alt="CUSTOM SKIN MENECRAFT">
@@ -128,7 +128,7 @@ require 'includes/functions.php';
                 </div>
 
                 <!-- CARD 2 -->
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 hover-scale">
                     <div class="card h-100 shadow">
 
                         <img src="assets/war minecraft.jpg" class="card-img-top" alt="Hosting Server Minecraft">
@@ -146,7 +146,7 @@ require 'includes/functions.php';
                 </div>
 
                 <!-- CARD 3 -->
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 hover-scale">
                     <div class="card h-100 shadow">
 
                         <img src="assets/minecraft1181.jpeg" class="card-img-top" alt="Minecraft Java & Bedrock">
@@ -163,7 +163,7 @@ require 'includes/functions.php';
                 </div>
 
                 <!-- CARD 4 -->
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 hover-scale">
                     <div class="card h-100 shadow">
 
                         <img src="assets/minecraft marketplace.jpeg" class="card-img-top"
@@ -181,7 +181,7 @@ require 'includes/functions.php';
                 </div>
 
                 <!-- CARD 5 -->
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 hover-scale">
                     <div class="card h-100 shadow">
 
                         <img src="assets/Minecraft Thumbnail.jpg" class="card-img-top" alt="">
@@ -197,7 +197,7 @@ require 'includes/functions.php';
                 </div>
 
                 <!-- CARD 6 -->
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 hover-scale">
                     <div class="card h-100 shadow">
 
                         <img src="assets/minecraft traders.jpeg" class="card-img-top" alt="">
@@ -213,7 +213,7 @@ require 'includes/functions.php';
                 </div>
 
                 <!-- CARD 7 -->
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 hover-scale">
                     <div class="card h-100 shadow">
 
                         <img src="assets/minecraft all aduancements.jpeg" card-img-top" alt="">
@@ -230,7 +230,7 @@ require 'includes/functions.php';
                 </div>
 
                 <!-- CARD 8 -->
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 hover-scale">
                     <div class="card h-100 shadow">
 
                         <img src="assets/minecraft pvp.jpg" class="card-img-top" alt="Crack Installer Minecraft">
@@ -247,7 +247,7 @@ require 'includes/functions.php';
                 </div>
 
                 <!-- CARD 9 -->
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 hover-scale">
                     <div class="card h-100 shadow">
 
                         <img src="assets/minecraft 27.jpeg" class="card-img-top" alt="">
@@ -263,7 +263,7 @@ require 'includes/functions.php';
                 </div>
 
                 <!-- CARD 10 -->
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 hover-scale">
                     <div class="card h-100 shadow">
 
                         <img src="assets/minecraft red.jpeg" class="card-img-top" alt="">
@@ -279,7 +279,7 @@ require 'includes/functions.php';
                 </div>
 
                 <!-- CARD 11 -->
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 hover-scale">
                     <div class="card h-100 shadow">
 
                         <img src="assets/minecraft barwione.jpeg" class="card-img-top" alt="">
@@ -295,7 +295,7 @@ require 'includes/functions.php';
                 </div>
 
                 <!-- CARD 12 -->
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 hover-scale">
                     <div class="card h-100 shadow">
 
                         <img src="assets/war minecraft.jpg" class="card-img-top" alt="Crack Installer Minecraft">
