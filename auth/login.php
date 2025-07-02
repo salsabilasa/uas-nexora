@@ -3,6 +3,12 @@ require '../includes/config.php';
 
 $message = '';
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+    $username = trim($_POST['username'])
+require '../includes/config.php';
+
+$message = '';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = trim($_POST['username']);
     $password = $_POST['password'];
@@ -20,12 +26,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message = "Login gagal! Username atau password salah.";
     }
 }
-?>
-
-<h2>Login</h2>
-<form method="POST">
-    <input type="text" name="username" required placeholder="Username">
-    <input type="password" name="password" required placeholder="Password">
-    <button type="submit">Login</button>
-</form>
-<p><?= $message ?></p>

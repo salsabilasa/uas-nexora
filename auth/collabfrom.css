@@ -1,0 +1,106 @@
+/* === FONT RESET & DASAR === */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #070a3d;
+  color: white;
+  min-height: 100vh;
+}
+
+
+/* === WRAPPER FORM KOLABORASI === */
+.collab-wrapper {
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+              0 10px 10px rgba(0, 0, 0, 0.22);
+  max-width: 700px;
+  margin: 50px auto;
+  text-align: center;
+  color: #000;
+}
+
+
+.collab-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+
+.collab-wrapper h1 {
+  color: #83c12b;
+  margin-bottom: 10px;
+}
+
+
+.collab-wrapper p {
+  color: #444;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* === FORM STYLING === */
+.collab-wrapper form input,
+.collab-wrapper form textarea {
+  width: 100%;
+  background-color: #eee;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #000;
+}
+
+
+.collab-wrapper form textarea {
+  resize: none;
+}
+
+
+.collab-wrapper form button {
+  background-color: #83c12b;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 12px 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+
+.collab-wrapper form button:hover {
+  letter-spacing: 2px;
+  background-color: #6fa71f;
+}
+
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .collab-wrapper {
+    margin: 20px;
+    padding: 20px;
+  }
+
+
+  .collab-wrapper form button {
+    padding: 10px 30px;
+  }
+}
